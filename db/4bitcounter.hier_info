@@ -1,0 +1,27 @@
+|fourbitcounter
+Number[3] => temp~11.DATAB
+Number[2] => temp~10.DATAB
+Number[1] => temp~9.DATAB
+Number[0] => temp~8.DATAB
+rst => temp[3].ACLR
+rst => temp[2].ACLR
+rst => temp[1].ACLR
+rst => temp[0].ACLR
+dr => process_0~1.IN0
+dr => process_0~0.IN0
+clk => temp[3].CLK
+clk => temp[2].CLK
+clk => temp[1].CLK
+clk => temp[0].CLK
+Ld => temp~8.OUTPUTSELECT
+Ld => temp~9.OUTPUTSELECT
+Ld => temp~10.OUTPUTSELECT
+Ld => temp~11.OUTPUTSELECT
+Ld => process_0~1.IN1
+Ld => process_0~0.IN1
+output[3] <= temp[3].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+output[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
